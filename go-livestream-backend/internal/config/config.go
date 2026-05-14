@@ -27,9 +27,9 @@ func LoadConfig() *Config {
 		DBHost:     getEnv("DB_HOST", "localhost"),
 		DBPort:     getEnv("DB_PORT", "5432"),
 		DBUser:     getEnv("DB_USER", "postgres"),
-		DBPassword: getEnv("DB_PASSWORD", "your_db_password"),
+		DBPassword: getEnv("DB_PASSWORD", ""),
 		DBName:     getEnv("DB_NAME", "livestream"),
-		JWTSecret:  getEnv("JWT_SECRET", "your_jwt_secret_here"),
+		JWTSecret:  getEnv("JWT_SECRET", ""),
 		Port:       getEnv("PORT", "8080"),
 	}
 }
